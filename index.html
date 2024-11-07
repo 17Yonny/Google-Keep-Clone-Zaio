@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Keep</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo-area">
+            <div class="tooltip">
+                <i class="material-icons hover">menu</i>
+                <span class="tooltip-text">Menu</span>
+             </div>
+             <img src="./asset/img/Google-keep.png"alt="logo"/>
+             <span class="logo-text">Keep</span>
+             <div class="search-area">
+                <div class="tooltip">
+                <i class="material-icons icon-background">search</i>
+                <span class="tooltip-text">Search<span>
+                </div>
+                <input type="text"placeholder="search">
+                </div>
+                <div class="setting-area">
+                <div class="tooltip">
+                <i class="material-icons hover">refresh</i>
+                <span class="tooltip-text">Refresh</span>
+                </div>
+                <div class="tooltip">
+                <i class="material-icons hover">view_list</i>
+                <span class="tooltip-text">View</span>
+                </div>
+                <div class="tooltip">
+                <i class="material-icons hover">settings</i>
+                <span class="tooltip-text">Settings</span>
+                </div>
+            </div>  
+        <div class="profile-actions-area">
+                <div class="tooltip">
+                <i class="material-icons hover">apps</i>
+                <span class="tooltip-text">Apps</span>
+               </div>
+                <div class="tooltip">
+                <i class="material-icons hover">account_circle</i>
+                <span class="tooltip-text">Account</span>
+             </div>
+            </div>
+        </nav>
+        <main>
+            <div class="sidebar">
+                <div class="sidebar-item">
+                    <i class="material-icons hover active">lightbulb</i>
+                    <span class="sidebar-text hover"> Notes</span>
+                </div>
+                <div class="sidebar-item">
+                    <i class="material-icons hover">notifications</i>
+                    <span class="sidebar-text">Remainders</span>
+                </div>
+                <div class="sidebar-item">
+                    <i class="material-icons hover">edit</i>
+                    <span class="sidebar-text">Edit Labels</span>
+                </div>
+                <div class="sidebar-item">
+                    <i class="material-icons hover ">archive</i>
+                    <span class="sidebar-text">Archive</span>
+                </div>
+                <div class="sidebar-item">
+                    <i class="material-icons hover ">delete</i>
+                    <span class="sidebar-text">Trash</span>
+                </div>
+             </div>
+        <div class="form-container">
+            <form>
+                <input class="note-text" type="text" placeholder="Take a note...">
+                <div class="form-actions">
+                        <div class="tooltip">
+                        <i class="material-icons hover">check_box</i>
+                        <span class="tooltip-text">New List</span>
+                        </div>
+                        <div class="tooltip">
+                            <i class="material-icons hover">brush</i>
+                            <span class="tooltip-text">New Drawing</span>
+                        </div>
+                            <div class=" tooltip">
+                                <i class="material-icons hover">image</i>
+                                <span class="tooltip-text">New Image</span>
+                                </div>
+                </div>
+            </form>
+        </div>
+      <div class="form-container active-form">
+            <form >
+                <input id="note-title"type="text"class="note-title" placeholder="Title">
+                <input id="note-text" class="note-text" type="text" placeholder="Take a note...">
+                    <div class="form-actions">
+                        <div class="icons">
+                            <div class="tooltip">
+                                    <i class="material-icons-outlined hover small-icon">add_alert</i>
+                                    <span class="tooltip-text">Remind me</span>
+                                    </div>
+                                    <div class="tooltip">
+                                    <i class="material-icons-outlined hover small-icon">person_add</i>
+                                    <span class="tooltip-text">Collaborator</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <i class="material-icons-outlined hover small-icon">image</i>
+                                        <span class="tooltip-text">Image</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <i class="material-icons-outlined hover small-icon">archive</i>
+                                        <span class="tooltip-text">Archive</span>
+                                    </div>
+                                                <div class="tooltip"> 
+                                                    <i class="material-icons-outlined hover small-icon">more_vert</i>
+                                                        <span class="tooltip-text">More</span>
+                                                        </div>
+                                                            <div class="tooltip">
+                                                                <i class="material-icons-outlined hover small-icon">undo</i>
+                                                                <span class="tooltip-text">Undo</span>
+                                                            </div>
+                                                            <div class="tooltip">
+                                                                <i class="material-icons-outlined hover small-icon">redo</i>
+                                                                <span class="tooltip-text">Redo</span>
+                                                            </div>
+                                           </div>
+                                            <button class="close-btn">close</button>
+                                        </div>
+                                    </div>
+                        </form>
+                    </div>   
+<div class="modal">
+    <div class="modal-content inactive-form">
+        <form >
+            <input id="note-title"type="text"class="note-title" placeholder="Title">
+            <input id="note-text" class="note-text" type="text" placeholder="Take a note...">
+                <div class="form-actions">
+                    <div class="icons">
+                        <div class="tooltip">
+                                <i class="material-icons-outlined hover small-icon">add_alert</i>
+                                <span class="tooltip-text">Remind me</span>
+                                </div>
+                                <div class="tooltip">
+                                <i class="material-icons-outlined hover small-icon">person_add</i>
+                                <span class="tooltip-text">Collaborator</span>
+                                </div>
+                                <div class="tooltip">
+                                    <i class="material-icons-outlined hover small-icon">image</i>
+                                    <span class="tooltip-text">Image</span>
+                                </div>
+                                <div class="tooltip">
+                                    <i class="material-icons-outlined hover small-icon">archive</i>
+                                    <span class="tooltip-text">Archive</span>
+                                </div>
+                                            <div class="tooltip"> 
+                                                <i class="material-icons-outlined hover small-icon">more_vert</i>
+                                                    <span class="tooltip-text">More</span>
+                                                    </div>
+                                                        <div class="tooltip">
+                                                            <i class="material-icons-outlined hover small-icon">undo</i>
+                                                            <span class="tooltip-text">Undo</span>
+                                                        </div>
+                                                        <div class="tooltip">
+                                                            <i class="material-icons-outlined hover small-icon">redo</i>
+                                                            <span class="tooltip-text">Redo</span>
+                                                        </div>
+                                       </div>
+                                        <button class="close-btn">close</button>
+                                    </div>
+                                </div>
+                    </form>
+                </div>
+            </div>
+          <div class="notes">
+          <div class="note">
+            <i class="material-icons check-circle">check_circle</i>
+            <div class="title">Title</div>
+            <div class="text">Text</div>
+            <div class="note-footer">
+                <div class="tooltip">
+                        <i class="material-icons-outlined hover small-icon">add_alert</i>
+                        <span class="tooltip-text">Remainder</span>
+                    </div>
+                    <div class="tooltip">
+                        <i class="material-icons-outlined hover small-icon">person_add</i>
+                        <span class="tooltip-text">Collaborator</span>
+                    </div>
+                    <div class="tooltip">
+                        <i class="material-icons-outlined hover small-icon">image</i>
+                        <span class="tooltip-text">Image</span>
+                    </div>
+                                <div class="tooltip">
+                                    <i class="material-icons-outlined hover small-icon">archive</i>
+                                    <span class="tooltip-text">Archive</span>
+                                </div>
+                                <div class="tooltip">
+                                    <i class="material-icons-outlined hover small-icon">more_vert</i>
+                                    <span class="tooltip-text">More</span>
+                                </div>
+                                <div class="tooltip">
+                                    <i class="material-icons-outlined hover small-icon">undo</i>
+                                    <span class="tooltip-text">Undo</span>
+                                </div>
+                                <div class="tooltip">
+                                    <i class="material-icons-outlined hover small-icon">redo</i>
+                                    <span class="tooltip-text">Redo</span>
+                                </div>
+            </div>
+            </div>
+       
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cuid/1.3.8/browser-cuid.min.js" referrerpolicy="no-referrer"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>                                                                                                                
